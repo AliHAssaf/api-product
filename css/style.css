@@ -1,0 +1,105 @@
+.content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-items: space-between;
+    & div{
+        box-shadow: 0 0 10px black;
+        height: 94%;
+        padding: 1vw;
+        padding-bottom: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: relative;
+        border-radius: 5px;
+        margin: 10px;
+        & img{
+            width: 100%;
+            height: 45%;
+            margin-bottom: 10px;
+        }
+        & h1{
+            margin-bottom: 10px;
+        } 
+        & h5{
+            color: gray;
+            margin-bottom: 10px;
+        }
+        & p{
+            font-size: 12px;
+        }
+        & button{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 5%;
+            cursor: pointer;
+            position: absolute;
+            top: 95%;
+            left: 0%;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    box-shadow: 0px 5px 25px gray;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    background-image: linear-gradient(0deg, rgb(119, 118, 118),rgb(31, 30, 30));
+    color: white;
+    & div{
+        width: 50%;
+        & h1{
+            font-size: 65px;
+            color: transparent;
+            -webkit-text-stroke: 2px white;
+        }
+        & ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+            & li{
+                margin: 0 20px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            & li:hover{
+                background-color: rgb(44, 44, 46);
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(0deg, black,gray);
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 21px;
+    margin-top: 20px;
+    & div{
+        width: 100%;
+        & a{
+            color: rgb(140, 140, 250);
+            text-decoration: none;
+        }
+    }
+}
